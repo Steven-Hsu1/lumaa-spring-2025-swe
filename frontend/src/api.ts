@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8000'; // Adjust if your backend runs on a different port
+const API_URL = 'http://localhost:8000';
 
 export const registerUser = async (username: string, password: string) => {
     return await axios.post(`${API_URL}/auth/register`, { username, password });
